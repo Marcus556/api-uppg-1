@@ -23,3 +23,49 @@
 * curl "https://jsonplaceholder.typicode.com/users?id=2" <-- query
 * curl "https://jsonplaceholder.typicode.com/users/"  -H "Content-Type: application/json; charset=utf-8" <-- Beskriver hur jag skickar min förfrågan och hur jag vill ha den tillbaka.
 * curl "https://jsonplaceholder.typicode.com/users/1" <-- Path paramters
+
+# Praktisk del:
+## Installation:
+1. git clone git@github.com:Marcus556/api-uppg-1.git
+2. cd /api-uppg-1/
+3. npm install
+4. npm start
+
+### GET /api/students
+req:
+```
+curl localhost:3001/api/students | jq
+```
+res: 
+```
+  {
+    "student": {
+      "address": {
+        "street": "gatasdaanf 22",
+        "zipCode": "21313",
+        "city": "lessadsebo"
+      },
+      "email": "bölagasd@asda.se",
+      "name": "Nisadasse"
+    },
+    "_id": "5eb341797853cc16bcbd9665",
+    "__v": 0
+  },
+  {
+    "student": {
+      "address": {
+        "street": "gågatqweqweqeqweqweqqean 23",
+        "zipCode": "21qweqwewqeqweqwe313",
+        "city": "åmåqweqwewqeqweqeql"
+      },
+      "email": "tsqweqewqweqweqweqweqse",
+      "name": "ingrid Oqwewqeqwewqeqweqwelsson"
+    },
+    "_id": "5eb3b1a02b32fb53a073b423",
+    "__v": 0
+  }
+```
+
+
+
+
